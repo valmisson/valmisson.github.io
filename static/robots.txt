@@ -1,0 +1,2 @@
+Sitemap: https://valmisson.com/sitemap.xml
+User-agent: *

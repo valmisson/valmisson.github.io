@@ -1,0 +1,32 @@
+.fade-down {
+  animation-duration: 0.7s;
+  animation-direction: normal;
+  animation-fill-mode: both;
+  animation-iteration-count: 1;
+  animation-name: fade-down;
+  animation-timing-function: ease-out;
+}
+
+.delay-1 {
+  animation-delay: 0.07s;
+}
+
+.delay-2 {
+  animation-delay: 0.14s;
+}
+
+.delay-3 {
+  animation-delay: 0.21s;
+}
+
+@keyframes fade-down {
+  0% {
+    opacity: 0.09;
+    transform: translateY(30px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

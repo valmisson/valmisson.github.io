@@ -1,0 +1,23 @@
+/* Vendors */
+
+@import url('./vendors/normalize.css');
+
+/* Fonts */
+
+@import url('./base/fonts.css');
+
+/* Base */
+
+@import url('./base/reset.css');
+@import url('./base/colors.css');
+@import url('./base/default.css');
+@import url('./base/animate.css');
+
+/* Modules */
+
+@import url('./modules/header.css');
+@import url('./modules/about.css');
+@import url('./modules/skills.css');
+@import url('./modules/links.css');
+@import url('./modules/copyright.css');
+@import url('./modules/translate.css');

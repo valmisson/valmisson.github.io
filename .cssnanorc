@@ -1,0 +1,12 @@
+{
+  "preset": [
+    "default",
+    {
+      "calc": true,
+      "cssDeclarationSorter": true,
+      "discardComments": {
+        "removeAll": true
+      }
+    }
+  ]
+}
