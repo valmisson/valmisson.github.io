@@ -3,4 +3,18 @@
   --font-primary: #646464;
   --title: #4d4d4d;
   --subtitle: #595959;
+  --bg: #f2f2f2;
+  --bg-skill: #ffffff;
+}
+
+/* dark mode */
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --font-primary: #eeeeee;
+    --title: #ffffff;
+    --subtitle: #ffffff;
+    --bg: #272727;
+    --bg-skill: #313131;
+  }
 }

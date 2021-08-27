@@ -1,5 +1,5 @@
 .skill {
-  background-color: white;
+  background-color: var(--bg-skill);
   margin-top: 50px;
   padding: 40px 0;
   will-change: transform, opacity;
