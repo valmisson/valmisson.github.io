@@ -8,10 +8,10 @@
   "scripts": {
     "dev": "parcel serve --port 8080",
     "build": "run-s clean build:*",
-    "publish-site": "run-s build push-gh-pages",
+    "deploy": "run-s build gh-pages",
     "build:parcel": "parcel build --no-cache",
     "build:SW": "workbox generateSW src/js/workbox-config.js",
-    "push-gh-pages": "push-dir --dir=dist --branch=gh-pages --cleanup --verbose",
+    "gh-pages": "push-dir --dir=dist --branch=gh-pages --cleanup --verbose",
     "clean": "rimraf dist"
   },
   "devDependencies": {
