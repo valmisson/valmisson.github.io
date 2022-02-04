@@ -1,2 +1,2 @@
-Sitemap: https://valmisson.com/sitemap.xml
+Sitemap: https://valmisson.github.io/sitemap.xml
 User-agent: *
