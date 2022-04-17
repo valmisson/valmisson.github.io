@@ -2,10 +2,6 @@
 
 @import url('./vendors/normalize.css');
 
-/* Fonts */
-
-@import url('./base/fonts.css');
-
 /* Base */
 
 @import url('./base/reset.css');
