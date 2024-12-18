@@ -79,13 +79,8 @@
   </head>
   <body>
     <main aria-label="Content">
-      <div class="translate">
-        <img src="images/icon-flag-pt.svg" class="translate__flag" onclick="translator('pt')" data-lang="pt" alt="Bandeira do Brasil">
-        <img src="images/icon-flag-en.svg" class="translate__flag" onclick="translator('en')" data-lang="en" alt="Bandeira do Estados Unidos">
-      </div>
-
       <section class="hero container">
-        <h1 class="brand notranslate">Valmisson <span>Grizorte</span></h1>
+        <h1 class="brand">Valmisson <span>Grizorte</span></h1>
         <h2 class="slug fade-down">Desenvolvedor Front-End</h2>
 
         <p class="about fade-down delay-1">
@@ -169,54 +164,10 @@
       </div>
     </main>
 
-    <!-- Translate box -->
-		<div id="translate__box"></div>
-
-    <script defer src="https://translate.google.com/translate_a/element.js?cb=translateInit"></script>
     <script defer src="https://www.googletagmanager.com/gtag/js?id=UA-117332541-1"></script>
     <script>
       const $year = document.querySelector('.copyright__year')
       $year.innerHTML = new Date().getFullYear()
-
-      window.translateInit = function translateInit () {
-				new google.translate.TranslateElement({
-					pageLanguage: 'pt',
-					includedLanguages: 'pt,en',
-					layout: google.translate.TranslateElement.InlineLayout.HORIZONTAL
-				}, 'translate__box')
-      }
-
-      window.translator = function translator (lang) {
-        const comboTranslate = document.querySelector('.goog-te-combo')
-
-        comboTranslate.value = lang
-
-        comboTranslate.dispatchEvent(new Event('change'))
-
-        if (!comboTranslate.value) translator('en')
-
-        setTimeout(toggleTranslatorFlag, 500)
-      }
-
-      window.toggleTranslatorFlag = function toggleTranslatorFlag () {
-        const cookieValue = document.cookie.match(new RegExp(';\\s*googtrans=([^;]+)'))
-        const currentFlag = cookieValue ? cookieValue[0].split('/').pop() : 'pt'
-        const datasLang = document.querySelectorAll('[data-lang]')
-
-        datasLang.forEach(function (img) {
-          const lang = img.dataset.lang
-
-          if (lang == currentFlag) {
-            img.classList.add('is--hidden')
-
-            return
-          }
-
-          img.classList.remove('is--hidden')
-        })
-      }
-
-      toggleTranslatorFlag()
 
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
